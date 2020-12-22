@@ -10,21 +10,6 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-/* #search{
-  border: 1px solid #eeeeee;
-  padding: 0px 5px;
-  height: 2rem;
-}
-.nav-item li{
-  position: relative;
-}
-.nav-item li i{
-  position: absolute;
-  top: 0;
-  right: 2px;
-}
- */
-
 #search {
   position: relative;
   top: 15px;
@@ -35,4 +20,7 @@ body {
   right: 2rem !important;
   font-size: 1.2rem !important;
 }
-
+form h5 {
+  padding-top: 15px;
+  margin-left: 10px;
+}
