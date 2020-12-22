@@ -20,16 +20,31 @@
             <div class="container">
                 <div class="nav-wrapper">
                     <a href="#" class="brand-logo">Booklist</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down nav-item">
-                        <li><input placeholder="Search..." id="search" type="text" class="white-text">
-                            <i class="material-icons">search</i>
-                        </li>
+                        <div class="input-field search-container">
+                            <input id="search" type="search" required placeholder="Search...">
+                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons teal-text close">close</i>
+                          </div>
                     </ul>
                 </div>
             </div>
         </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><input id="search" type="search" required class="">
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+            </li>
+        </ul>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });</script>
     <script src="script.js"></script>
 </body>
 
