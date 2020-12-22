@@ -52,7 +52,7 @@
                             </div>
                             <div class="col s12 m3">
                                 <div class="input-field col s12">
-                                    <input type="text" class="datepicker">
+                                    <input type="text" class="datepicker" id="month">
                                     <label for="month">Month</label>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@
                             </div>
                             <div class="col s12 m3">
                                 <div class="input-field col s12 center-align">
-                                    <button class="btn waves-effect" type="submit">Add Book</button>
+                                    <button class="btn waves-effect" type="submit" id="add-btn">Add Book</button>
                                 </div>
                             </div>
                         </div>
@@ -80,9 +80,11 @@
                                 <th>Book</th>
                                 <th>Month</th>
                                 <th>Rating</th>
+                                <th></th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="book-list">
+
                         </tbody>
                     </table>
                 </div>

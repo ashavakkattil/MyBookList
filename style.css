@@ -25,4 +25,9 @@ form h5 {
   padding-left: 10px;
   padding-bottom: 15px;
 }
-
+table tr{
+  text-transform: capitalize;
+}
+.delete{
+  cursor: pointer;
+}
