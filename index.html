@@ -23,17 +23,16 @@
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down nav-item">
                         <div class="input-field search-container">
-                            <input id="search" type="search" required placeholder="Search...">
-                            <label class="label-icon" for="search"><i
-                                    class="material-icons teal-text">search</i></label>
-                            <i class="material-icons teal-text close">close</i>
+                            <li><input id="search" type="search" required placeholder="search.." class="search-box">
+                                <i class="material-icons white-text">search</i>
+                            </li>
                         </div>
                     </ul>
                 </div>
             </div>
         </nav>
         <ul class="sidenav" id="mobile-demo">
-            <li><input id="search" type="search" required class="search-mob" placeholder="search..">
+            <li><input type="search" required class="search-box search-mob" placeholder="search..">
                 <i class="material-icons teal-text">search</i>
             </li>
         </ul>
@@ -76,7 +75,6 @@
                                 <th>Book</th>
                                 <th>Month</th>
                                 <th>Rating</th>
-                                <th></th>
                             </tr>
                         </thead>
                         <tbody id="book-list">
