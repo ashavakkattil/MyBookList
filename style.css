@@ -20,14 +20,32 @@ body {
   right: 2rem !important;
   font-size: 1.2rem !important;
 }
+#mobile-demo li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#mobile-demo li .search-mob {
+  width: 90%;
+  padding: 5px;
+  border: 1px solid teal;
+  border-radius: 6px;
+  font-size: 13px;
+}
+#mobile-demo li i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  font-size: 15px;
+}
 form h5 {
   padding-top: 15px;
   padding-left: 10px;
   padding-bottom: 15px;
 }
-table tr{
+table tr {
   text-transform: capitalize;
 }
-.delete{
+.delete {
   cursor: pointer;
 }

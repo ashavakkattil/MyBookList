@@ -5,10 +5,12 @@ const addBtn = document.getElementById('add-btn')
 const form = document.querySelector('form')
 const bookList = document.querySelector('#book-list')
 const search = document.getElementById('search')
+const searchMob = document.querySelector('.search-mob')
 
 bookList.addEventListener('click', deleteBook)
 form.addEventListener('submit', addBook)
 search.addEventListener('keyup', filterBook)
+searchMob.addEventListener('keyup', filterBook)
 
 function addBook() {
     var row = document.createElement('tr')
@@ -20,18 +22,18 @@ function addBook() {
 
     bookName.blur()
 }
-function deleteBook(e){
-    if(e.target.classList.contains('delete')){
+function deleteBook(e) {
+    if (e.target.classList.contains('delete')) {
         document.querySelector('#book-list').removeChild(e.target.parentElement.parentElement)
     }
 }
-function filterBook(e){
+function filterBook(e) {
     let searchText = e.target.value
     let books = document.querySelectorAll('.book-name')
     books.forEach((b) => {
-        if(b.textContent.toLowerCase().indexOf(searchText.toLowerCase()) != -1){
+        if (b.textContent.toLowerCase().indexOf(searchText.toLowerCase()) != -1) {
             b.parentElement.style.display = 'table-row'
-        }else{
+        } else {
             b.parentElement.style.display = 'none'
         }
     })
