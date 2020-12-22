@@ -16,7 +16,7 @@
 
 <body>
     <div class="wrapper">
-        <nav class="teal">
+        <nav class="teal lighten-3 ">
             <div class="container">
                 <div class="nav-wrapper">
                     <a href="#" class="brand-logo">Booklist</a>
@@ -24,7 +24,8 @@
                     <ul id="nav-mobile" class="right hide-on-med-and-down nav-item">
                         <div class="input-field search-container">
                             <input id="search" type="search" required placeholder="Search...">
-                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            <label class="label-icon" for="search"><i
+                                    class="material-icons teal-text">search</i></label>
                             <i class="material-icons teal-text close">close</i>
                         </div>
                     </ul>
@@ -41,7 +42,7 @@
             <div class="row section">
                 <div class="col s12">
                     <form class="teal lighten-5 z-depth-2">
-                        <h5>Add Book</h5>
+                        <h5 class="teal white-text lighten-1">Add Book</h5>
                         <div class="row">
                             <div class="col s12 m3">
                                 <div class="input-field col s12">
@@ -63,11 +64,27 @@
                             </div>
                             <div class="col s12 m3">
                                 <div class="input-field col s12 center-align">
-                                    <button class="btn waves-effect">Add Book</button>
+                                    <button class="btn waves-effect" type="submit">Add Book</button>
                                 </div>
                             </div>
                         </div>
                     </form>
+                </div>
+            </div>
+            <!-- Table -->
+            <div class="row section">
+                <div class="col s12">
+                    <table class="striped z-depth-2">
+                        <thead class="teal lighten-1 white-text">
+                            <tr>
+                                <th>Book</th>
+                                <th>Month</th>
+                                <th>Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
